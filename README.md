@@ -11,4 +11,8 @@ Which solves the 4 main issues of college, they are
 
 4.And at the end booking of gym
 
-We have also given the clubs present in MSRIT college and their details
+We have also given the clubs present in MSRIT college and their details. Overall, Our website aims to streamline the college experience and make it more manageable for students.
+
+-Team Noob-coders
+
+Team members : Akash, Aman Raj, Ankit
