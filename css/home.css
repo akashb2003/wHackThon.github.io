@@ -1,0 +1,317 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#logo {
+    margin: 24px 36px;
+}
+#logo img {
+    height: 56px;
+    margin: 17px 20px;
+}
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#navbar {
+    background-color: rgba(132, 7, 209, 0.2);
+    top: 0px;
+    left: 0px;
+    position: sticky;
+    height: 100%;
+    width: 102vw;
+    z-index: 2;
+ 
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section  */
+#home {
+    position: relative;
+    top: -150px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before {
+    content: "";
+    background: url(../spaghetti-1932466.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    height: 140%;
+    width: 105vw;
+    opacity: .89;
+}
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    position: relative;
+    top: 80px;
+}
+#home p {
+    /* color: black; */
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    position: relative;
+    top: 100px;
+}
+
+/* services section */
+#services {
+    margin: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 15px 24px;
+    border-radius: 23px;
+    background-color: rgb(240, 232, 232);
+    flex-basis: 300px;
+    text-align: center;
+    box-shadow: black 20px 20px 10px;
+}
+.services-container {
+    position: relative;
+    top: -50px;
+}
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    padding: 0px 100px;
+
+}
+.box:hover {
+    transform: scale(1.2);
+}
+/* utility class */
+.h-primary {
+    font-size: 3.8rem;
+}
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    /* background-color: brown; */
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    margin: 17px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    width: 180px;
+    position: relative;
+    top: 150px;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+h1.h-primary.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.section::before {
+    content: "";
+    background: url(../msrit-campus.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    height: 60%;
+    width: 102vw;
+    z-index: -1;
+    opacity: .7;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+#follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#logos {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 2rem;
+}
+#link {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 2rem;
+}
+.fa {
+    padding: 25px;
+    font-size: 500px;
+    text-align: center;
+    border-radius: 15px;
+    width: 25px;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+.fa:hover {
+    opacity: .7;
+}
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+.fa-instagram {
+    background: orangered;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+#visit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+.fa-yahoo {
+    background: #430297;
+    color: white;
+}
+.copy {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+#visit {
+    font-size: 2rem;
+}
+/* megabox */
+.mega-box {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    visibility: hidden;
+}
+.item:hover .mega-box {
+    transition: all 0.7s;
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+.content {
+    /* background-color: rgb(75, 25, 25); */
+    /* background-color:rgb(71 26 98); */
+    background-color:rgb(59 21 82);
+    border: 10px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    border-radius: 10px;
+}
+.main {
+    width: 1000px;
+    line-height: 45px;
+}
+.main p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mega-links {
+    margin-left: -42px;
+    border-left: 1px solid white;
+}
+.mega-links li {
+    padding: 0 20px;
+}
+.mega-links li a {
+    padding: 0 20px;
+    color: rgb(237, 216, 216);
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+}
+.link21{
+    text-decoration: none;
+    color: black ;
+}
+#home p{
+    background-color: #5d3a5c85;
+    border-radius: 10px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+ .mode{
+    margin-left: 750px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    
+  }
+  .mode:hover{
+    background-color: purple;
+  }

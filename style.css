@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,800;1,500;1,700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    color : var(--secondary-color);
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --third-color:  rgba(54, 54, 54);
+    --fourth-color: rgba(255, 255, 255, 0.695);
+    --card-color:  #242424;
+    --eff-color:  rgba(255, 255, 255, 0.1);
+}
+
+.black-footer {
+    
+        color: var(--primary-color);
+        text-align: center;
+ } 
+
+ .foot{
+    padding-top: 9px;
+    padding-bottom: 4px;
+ }
+
+.dark-theme{
+    
+    --primary-color: white;
+    --secondary-color: black;
+    --third-color:  rgb(0, 0, 0);
+    --fourth-color: rgba(255, 255, 255, 0.695);
+    --card-color:  #000000;
+    --eff-color:  rgba(70, 70, 70, 0.1);
+}
+
+.ramaiah{
+    color: white;
+}
+
+.bigger{
+    font-size: 60px;
+}
+
+body{
+    background-color: var(--primary-color);
+    overflow-x : hidden;
+}
+
+.org{
+    color: rgb(252, 96, 6);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)) ,url('ramaiah.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background: rgba(17, 17, 17, 0.5);
+}
+
+.navbar{
+    padding: 15px 18px !important;
+}
+
+.logo{
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.848) !important;
+}
+
+.nav-item{
+    margin: 0px 10px;
+}
+
+.nav-item .nav-link{
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-item ::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    background-color: rgba(255, 129, 57);
+    width: 0%;
+    height: 3px;
+    transition: 0.4s ease-in-out;
+}
+ 
+.nav-item:hover .nav-link::after{
+    width: 100%;
+}
+
+.nav-link:hover{
+    color: rgba(255, 129, 57);
+}
+
+.nav-item:hover {
+    color: rgba(255, 129, 57);
+}
+
+.ramaiah{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+/* trasition 1 */
+.hidden{
+    opacity: 0;
+
+    filter: blur(5px);
+    transform: translateX(-100%);
+    
+    transition: all 1s;
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+
+    transform: translateX(0);
+}
+
+.about-us-container{
+    width: 100%;
+    height: 80vh;
+}
+
+.about-us{
+    width: 100%;
+    height: 320px;
+    background-color: var(--third-color);
+    margin-top: 140px;
+    
+}
+
+.container-about{
+    padding: 10px 38px;
+    color: var(--secondary-color);
+}
+
+.heading-about{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(255, 129, 57);
+    margin: 10px 10px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgba(255, 129, 57);
+    width:46px;
+    height: 2px;
+}
+
+
+.para-about{
+   font-size: 13px;
+   font-weight: 500;
+   color: var(--fourth-color);
+   line-height: 21px;
+   margin: 25px 0px; 
+}
+
+.img-about{
+    height: 420px;
+    width: 50%;
+    position: absolute;
+    top: -36px;
+    right: 20px;
+}
+
+.club-catg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+.heading-club{
+    font-size: 34px;
+    color: rgb(255,129,57);
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.heading-club::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(255,129,57);
+    width: 56px;
+    height: 2px;
+}
+
+.card-club
+{
+    padding: 14px 10px;
+    background-color: var(--card-color) !important;
+} 
+
+.cgpa {
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -20px;
+    columns: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.alink{
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid var(--secondary-color);
+}
+
+.sec-01{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    columns: var(--secondary-color);
+}
+
+.container-eff{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.effect-t{
+    font-size: 4rem;
+    color: rgb(255,129,57);
+    margin-bottom: 50px;
+}
+
+.eff-content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eff-content .eff-img{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.eff-content .eff-text{
+    z-index: 222;
+    background: var(--eff-color);
+    backdrop-filter: blur(20px);  
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid var(--eff-color) ;
+    border-radius: 10px;
+    transform: translate(-80px,50px);
+}
+
+.eff-txt2{
+    margin-right: -200px;
+}
+

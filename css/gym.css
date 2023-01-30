@@ -1,0 +1,176 @@
+body{
+    background-image: url(../sven-mieke-MsCgmHuirDo-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;    
+}
+/* navigation bar */
+#logo{   
+    margin: 24px 36px;
+}
+#logo img{
+    height: 56px;
+    margin: 17px 20px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#navbar{
+    background-color: rgb(0, 0, 0,.2) ;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-image: url(..//head.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#navbar ul li{
+     list-style: none;
+     font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+   background-color: white;
+}
+#veg{
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    margin-top: 100px;
+   
+}
+.container{
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 12px 40px;
+    flex-direction: column;
+}
+.option{
+    /* border: 1px solid rgb(36, 144, 77) ; */
+    background-color: #2a1b1b7a;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    align-self: center;
+    /* backdrop-filter: blur(5px); */
+}
+.food{
+    height:200px;
+    width:350px;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+.discription{
+    margin-left: 50px;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.discription h3{
+    align-items: center;
+}
+.name{
+    width: 200px;
+}
+.name h3{
+    font-size: 25px;
+}
+.price{
+    width: 200px;
+}
+.quantity{
+    width:300px;
+}
+#text{
+    width:50px;
+}
+#total{
+    text-align: center;
+    font-weight: bold;
+}
+#next{
+    text-align: center;
+}
+/* #footer{
+    background-color: rgb(36, 144, 77);
+    border-radius: 12px;
+    padding: 3px;
+    color: white;
+} */
+.button{
+    color:white;
+    background-color: brown;
+    border:2px solid brown;
+    border-radius: 3px;
+}
+.button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* megabox */
+.mega-box{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    visibility: hidden;
+}
+.item:hover .mega-box{
+    transition: all 0.7s;
+    top: 90px;
+    opacity: 1;
+    visibility:visible ;
+}
+.content{
+    background-color: rgb(75, 25, 25);
+    border: 10px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    border-radius: 10px;
+}
+.main{
+    width: 1000px;   
+    line-height: 45px;
+}
+.main p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mega-links{
+    margin-left: -42px;
+    border-left: 1px solid white;
+}
+.mega-links li{
+    padding: 0 20px;
+}
+.mega-links li a{
+    padding: 0 20px;
+    color: rgb(237, 216, 216);
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+
